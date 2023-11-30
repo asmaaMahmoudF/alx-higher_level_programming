@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 import random
 for i in range(0, 99):
-    print("{:d} = 0x{:x}".format(i,i))
+    print("{:d} = 0x{:x}".format(i, i))
