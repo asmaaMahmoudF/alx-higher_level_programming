@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-print_last_digit = __import__('9-print_last_digit').print_last_digit
-r = print_last_digit(98)
-print(r)
+add = __import__('10-add').add
+
+print(add(1, 2))
+print(add(98, 0))
+print(add(100, -2))
+
 #  return print("{:d}".format(abs(number) % 10), end="")
