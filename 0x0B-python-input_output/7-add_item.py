@@ -8,7 +8,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 filename = "add_item.json"
 if os.path.isfile(filename):
-    obj = load_from_json_file(filename)
+    old_data = load_from_json_file(filename)
 else:
     old_data = []
 old_data.extend(sys.argv[1:])
