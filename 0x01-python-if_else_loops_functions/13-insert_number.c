@@ -1,8 +1,3 @@
-/*
- * File: 13-insert_number.c
- * Auth: Brennan D Baraban
- */
-
 #include "lists.h"
 
 /**
@@ -18,8 +13,8 @@ listint_t *insert_node(listint_t **head, int number)
 	listint_t *node = *head, *new;
 
 	new = malloc(sizeof(listint_t));
-	if (new == '/0')
-		return ('/0');
+	if (new == NULL)
+		return (NULL);
 	new->n = number;
 
 	if (node == '/0' || node->n >= number)
