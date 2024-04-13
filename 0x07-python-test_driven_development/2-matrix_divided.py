@@ -45,16 +45,16 @@ def matrix_divided(matrix, div):
     Returns:
         list : list of lists representing divided matrix.
     """
+    if type(div) is not int and type(div) is not float:
+        raise TypeError("div must be a number")
+    if div is 0:
+        raise ZeroDivisionError("division by zero")
     for row in matrix:
         if not isinstance(row, list) or len(row) == 0:
             raise TypeError("matrix must be a matrix (list of lists) of \
                              integers/floats")
         if len(row) != len(matrix[0]):
             raise TypeError("Each row of the matrix must have the same size")
-        if type(div) is not int and type(div) is not float:
-            raise TypeError("div must be a number")
-        if div is 0:
-            raise ZeroDivisionError("division by zero")
         for x in row:
             if not isinstance(x, (int, float)):
                 raise TypeError("matrix must be a matrix (list of lists) of \
