@@ -56,4 +56,4 @@ class Square:
         for i in range(self.size):
             square_str += " "*self.position[0] + "#"*self.size+"\n"
 
-        return square_str [:-1]  # remove the last '\n'
+        return square_str[:-1]  # remove the last '\n'
