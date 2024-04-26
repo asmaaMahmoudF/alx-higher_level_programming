@@ -21,8 +21,8 @@ class Rectangle:
         elif height < 0:
             raise ValueError("height must be >= 0")
         else:
-            self._Rectangle__height = height
-            self._Rectangle__width = width
+            self.height = height
+            self.width = width
 
 
 @property
