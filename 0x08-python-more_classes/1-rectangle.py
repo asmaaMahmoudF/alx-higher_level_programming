@@ -35,8 +35,11 @@ def width(self):
 def width(self, value):
     """setter for the private instance with width"""
     if type(value) is not int:
-        raise TypeError("width must be an integer")
-    elif value < 0:
+        try:
+            value = int(value)
+        except ValueError:
+            raise TypeError("width must be an integer")
+    if value < 0:
         raise ValueError("width must be >= 0")
     self.__width = value
 
@@ -51,7 +54,10 @@ def height(self):
 def height(self, value):
     """setter for the private instance with height"""
     if type(value) is not int:
-        raise TypeError("height must be an integer")
-    elif value < 0:
+        try:
+            value = int(value)
+        except ValueError:
+                raise TypeError("height must be an integer")
+    if value < 0:
         raise ValueError("height must be >= 0")
     self.__height = value
