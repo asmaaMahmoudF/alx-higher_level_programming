@@ -7,6 +7,7 @@ Defining a class Rectangle
 class Rectangle:
     """class Rectangle that defines a rectangle"""
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """initializes the rectangle
@@ -70,8 +71,8 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
         for i in range(self.height - 1):
-            print("#" * self.width)
-        return "#" * self.width
+            print(self.print_symbol * self.width)
+        return self.print_symbol * self.width
 
     def __repr__(self):
         """repr method"""
@@ -79,5 +80,6 @@ class Rectangle:
 
     def __del__(self):
         """delet object/instance"""
-        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
+
