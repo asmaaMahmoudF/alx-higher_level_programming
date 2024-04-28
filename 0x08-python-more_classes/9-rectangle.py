@@ -99,6 +99,6 @@ class Rectangle:
     def square(cls, size=0):
         """returns a new Rectangle instance with size for width and height"""
         if size:
-           return cls(size, size)
+            return cls(size, size)
         else:
             pass
