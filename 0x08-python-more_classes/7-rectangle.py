@@ -71,8 +71,8 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
         for i in range(self.height - 1):
-            print(self.print_symbol * self.width)
-        return self.print_symbol * self.width
+            print(str(self.print_symbol) * self.width)
+        return str(self.print_symbol) * self.width
 
     def __repr__(self):
         """repr method"""
