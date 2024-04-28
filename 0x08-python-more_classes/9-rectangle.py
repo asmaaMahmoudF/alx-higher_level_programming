@@ -82,3 +82,7 @@ class Rectangle:
         """delet object/instance"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
+
+    def square(cls, size=0):
+        """square method"""
+        
