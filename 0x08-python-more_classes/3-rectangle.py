@@ -66,6 +66,6 @@ class Rectangle:
         """method string object"""
         if self.width == 0 or self.height == 0:
             return ""
-        for i in range(self.height):
+        for i in range(self.height - 1):
             print("#" * self.width)
-        return ""
+        return "#" * self.width
