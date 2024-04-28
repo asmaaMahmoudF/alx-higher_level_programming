@@ -6,13 +6,14 @@ Defining a class Rectangle
 
 class Rectangle:
     """class Rectangle that defines a rectangle"""
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """initializes the rectangle
         Args:
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
         """
-        number_of_instances = 0
         if type(width) is not int:
             raise TypeError("width must be an integer")
         elif width < 0:
