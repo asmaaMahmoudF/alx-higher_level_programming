@@ -1,4 +1,3 @@
-
 -- converts hbtn_0c_0 database to utf8
 -- table: first_table to utf8
 -- field: name to utf8
