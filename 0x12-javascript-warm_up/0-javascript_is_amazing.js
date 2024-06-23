@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/Usr/bin/node
 
 const myVar = 'Javascript is amazing';
 console.log(myVar);
