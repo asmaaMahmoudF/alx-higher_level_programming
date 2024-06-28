@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-deltes all State objects with letter a
+deletes all State objects with letter a
 """
 if __name__ == '__main__':
     from sqlalchemy import create_engine, MetaData
